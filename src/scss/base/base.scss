@@ -8,6 +8,26 @@
   box-sizing: inherit;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 li {
   list-style: none;
 }
@@ -27,6 +47,9 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   min-height: 100%;
+  color: $text;
+  font-family: 'ProximaNova', sans-serif;
+  background: $bgColor;
 }
 
 img {
@@ -34,4 +57,25 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+}
+
+section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.title {
+  color: $textSecond;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.subtitle {
+  margin-top: 1.125rem;
+  color: $gray;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 21px;
+  text-align: center;
 }

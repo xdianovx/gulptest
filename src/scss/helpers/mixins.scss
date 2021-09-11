@@ -11,9 +11,7 @@
     .js-focus-visible &:focus:not(.focus-visible) {
       @content;
     }
-  }
-
-  @else {
+  } @else {
     .js-focus-visible :focus:not(.focus-visible) {
       outline: none;
     }
@@ -26,6 +24,7 @@
     font-family: $font_name;
     font-display: swap;
     font-style: #{$style};
-    src: url("../fonts/#{$file_name}.woff2") format("woff2"), url("../fonts/#{$file_name}.woff") format("woff");
+    src: url('../fonts/#{$file_name}.woff2') format('woff2'),
+      url('../fonts/#{$file_name}.woff') format('woff');
   }
 }
